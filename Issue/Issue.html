@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>发布</title>
+		<script src="../PublicJS/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+		    document.write("<link href='../PublicCSS/reset.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+			document.write("<link href='css/Issue.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="title">
+			<input class="" type="text" placeholder="标题 最多可填写40个字" id="title"/>
+		</div>
+		<div class="Fresh">
+			<textarea name="" placeholder="生鲜标注" rows="" cols="" id="content"></textarea>
+		</div>
+		
+		<div class="Picture">
+			<div class="tit"><h3>商品图片</h3><p>（最多可上传9张图片，前3张默认为主图）</p></div>
+			
+			<div class="PicList">
+				<div onClick="getProduct()" class="Add"></div>
+			</div>
+			
+		</div>
+		
+		<div class="Pudiv">
+			<span>单价</span>
+			<input type="number" placeholder="请输入价格" onkeyup="value=value.replace(/[^\d]/g,'')" id="money" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>起团数</span>
+			<input type="number" placeholder="请输入数量" onkeyup="value=value.replace(/[^\d]/g,'')"  id="minNum" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>截团上限</span>
+			<input type="number" placeholder="大于起团数" onkeyup="value=value.replace(/[^\d]/g,'')"  id="maxNum" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>开团时间</span>
+			<input type="datetime-local"  id="startDate" />
+			<s></s>
+		</div>
+		
+		<div class="Pudiv">
+			<span>截团时间</span>
+			<input type="datetime-local"  id="endDate" />
+			<s></s>
+		</div>
+		
+		<div class="Pudiv">
+			<span>预计送货时间</span><input  placeholder="成团后2个工作日" name="" id="Deliverytime" type="text">
+		</div>
+		
+		<div class="Pudiv Mtop">
+			<span>团购次数</span>
+			<p><i></i><b>重复</b></p>
+			<p><i id="disposable" class="light"></i><b>一次性</b></p>
+			
+		</div>
+		
+		<div class="Pudiv Freq">
+			<span>物流方式</span>
+			<p><i></i><b>代收点</b></p>
+			<p><i  class="light" id="ziqu" ></i><b>自取</b></p>
+			<input type="text"  placeholder="请输入自取地址" id="address" />
+		</div>
+
+		<div class="Pudiv OtherCell">
+			<span>是否允许其他小区购买</span>
+			<p><i></i><b>否</b></p>
+			<p><i  id="open" class="light"></i><b>是</b></p>			
+		</div>
+		
+		<div class="Protocol">
+			<i id="isok" class="light"></i>
+			<span>签署审核协议</span>
+		</div>
+		
+		<footer>
+			<a href="javascript:" onClick="publish(0)">保存</a>
+			<a href="javascript:" onClick="publish(1)">发布</a>
+		</footer>
+		
+		
+		<!--选择照片-->
+		<div class="PoModule">
+			<div class="albumTit"><img src="images/return.png" alt=""/>照片<a href="javascript:">选择相册</a></div>
+			
+			<div class="Photolist">
+				<div class="camera"><img src="images/camera.png" alt="" /><!--<input type="file" accept="image/*;" capture="camera" >--></div>
+				<div><img src="images/pic.png" alt="图片" /><b class="light"></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+			</div>
+			
+			
+			<div class="Affirm">
+				<p><span>5</span>/9</p>
+				<a href="javascript:">确认 </a>
+			</div>
+		</div>
+		
+		<!--协议模块-->
+		<div class="UdpModule">
+			<div class="AuditProtocol">
+				<h3>审核协议</h3>
+				<div class="Project">协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容</div>
+				
+				<div class="handle">
+					<a href="javascript:">取消</a>
+					<a class="agree" href="javascript:">同意</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--日期模块-->
+		<div class="DateModule">
+			<img src="images/date.png" alt="时间"/>
+		</div>
+		
+		<script type="text/javascript">
+			document.write("<script src='js/Issue.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+		</script>
+	</body>
+
+</html>

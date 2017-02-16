@@ -1,0 +1,52 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+/*.mine{
+	background-image: url(../images/bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}*/
+
+.Nav{ background: #FFFFFF; clear: both; position: fixed; top: 0; width: 100%; z-index: 6;}
+.Nav a{  border-bottom-style: solid; border-color: #ffffff; color: #333333; text-align: center; display: inline-block;}
+.Nav a.light{ border-color: #ff718d; color: #ff718d;}
+
+/*$("#ProductList")
+$("#IngroupGoods")
+$("#GroupOrder")*/
+#ProductList{ display: block;}
+#IngroupGoods{ display: none;}
+#GroupOrder{ display: none;}
+
+.ProList{ clear: both; overflow: hidden;}
+
+.ProList .lis{ background: #FFFFFF; clear: both; overflow: hidden; position: relative;}
+
+.ProList .lis .To{ clear: both; width: 100%; overflow:hidden;}
+.ProList .lis .To img{float: left;}
+.ProList .lis .To div{ float: left;}
+.ProList .lis .To div h3{ color: #333333; clear: both;}
+.ProList .lis .To div p{clear: both; margin: 0; overflow: hidden;}
+.ProList .lis .To div p span{color: #ff718d; float:left; display:inline-block}
+.ProList .lis .To div p b{color: #888888; font-weight: normal; display: inline-block; float: left;}
+.ProList .lis .To div p b font{color:#ff718d ;}
+.ProList .lis .To div h4{color: #888888; text-decoration: none; clear: both; white-space:nowrap;}
+
+#GroupOrder .lis i{background-image: url(../images/success.png);
+	background-size: 100% 100%;
+	display: block;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#GroupOrder .lis i.fail{background-image: url(../images/fail.png);}
+
+
+.operate{ margin: auto; border-top: 1px solid #eceded; overflow: hidden;}
+.operate a{ display: block; text-decoration: none; float: left;}
+.operate a img{width: 100%; height: 100%; border: none;}

@@ -1,0 +1,87 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.Loginimg {
+	display: block;
+	margin: auto auto;
+}
+
+.getInto {
+	clear: both;
+}
+
+.getInto a {
+	text-align: center;
+	color: #ffffff;
+	background: #ff718d;
+	text-decoration: none;
+	display: block;
+}
+
+.getInto a:first-child {
+	background-image: url(../images/getInto.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.CellList {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	display: none;
+	background: #FFFFFF;
+	left: 0;
+}
+
+.CellList img.banner {
+	width: 100%;
+}
+
+.CellList .tit {
+	clear: both;
+	overflow: hidden;
+}
+
+.CellList .tit h3 {
+	float: left;
+	color: #ff718d;
+}
+
+.CellList .tit img {
+	float: right;
+	display: block;
+}
+
+.CellList .List {
+	clear: both;
+	overflow-y: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.CellList .List p {
+	clear: both;
+	border-bottom: 1px solid #eceded;
+}
+
+.CellList .List p span {
+	color: #333333;
+	display: block;
+	float: left;
+}
+
+.CellList .List p span.light {
+	color: #ff718d;
+}
+
+.CellList .List p b{ float: right;
+	background-size: 100% 100%;
+	background-repeat: no-repeat; display: block;}
+.CellList .List p b.light{
+	background-image: url(../images/ok.png);
+}

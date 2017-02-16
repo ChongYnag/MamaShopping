@@ -1,0 +1,19 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+.walletRecords{ overflow: hidden; clear: both;}
+.walletRecords div.Records{ border-bottom: 1px solid #eceded; background: #FFFFFF;}
+.walletRecords div.Records .pic{ clear: both; display: table;}
+.walletRecords div.Records .pic img{ float:left; display: block;}
+.walletRecords div.Records .pic p{ color: #333333;} 
+
+.walletRecords div.Records .order{ clear: both; display: table; width: 100%;}
+.walletRecords div.Records .order p{ float:left; display: block; color: #333333;}
+.walletRecords div.Records .order b{ color: #333333; float: right; display: block; font-weight: inherit;}
+
+.walletRecords div.Records .date{ clear: both; display: table; width: 100%;}
+.walletRecords div.Records .date p{ float:left; display: block; color: #b6b6b6;}
+.walletRecords div.Records .date a{ color: #ff718d; float: right; display: block; font-weight: inherit; text-decoration: none;}  
